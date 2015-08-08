@@ -1,5 +1,4 @@
-import java.util.Comparator;
-import java.util.Objects;
+package Employment;
 
 /**
  * Created by LLL on 15/8/6.
@@ -38,7 +37,7 @@ public class Employee extends Human implements Comparable,Cloneable{
 
     @Override
     public String toString() {
-        return "Employee#"+id+" "+super.toString()+",work in department "
+        return "Employment.Employee#"+id+" "+super.toString()+",work in department "
                 +department+",having a salary of "+salary;
     }
 
