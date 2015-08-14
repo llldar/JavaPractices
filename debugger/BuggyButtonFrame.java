@@ -40,22 +40,22 @@ class BuggyButtonPane extends JPanel{
     private class ButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent event){
             String arg = event.getActionCommand();
-//            switch (arg){
-//                case "Yellow":
-//                    setBackground(Color.yellow);
-//                    break;
-//                case "Blue":
-//                    setBackground(Color.blue);
-//                    break;
-//                case "Red":
-//                    setBackground(Color.red);
-//                    break;
-//                default:
-//                    break;
-//            }
-            if (arg.equals("Yellow")) setBackground(Color.yellow);
-            else if(arg.equals("Blue")) setBackground(Color.blue);
-            else if (arg.equals("Red")) setBackground(Color.red);
+            switch (arg){
+                case "Yellow":
+                    setBackground(Color.yellow);
+                    break;
+                case "Blue":
+                    setBackground(Color.blue);
+                    break;
+                case "Red":
+                    setBackground(Color.red);
+                    break;
+                default:
+                    break;
+            }
+//            if (arg.equals("Yellow")) setBackground(Color.yellow);
+//            else if(arg.equals("Blue")) setBackground(Color.blue);
+//            else if (arg.equals("Red")) setBackground(Color.red);
         }
     }
 
